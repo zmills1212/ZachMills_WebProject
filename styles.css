@@ -1,0 +1,469 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+header {
+  background-color: #4682B4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #333;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #555;
+  border-radius: 5px;
+}
+/* Dropdown on navigation menu to see all states site will be giving information for */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+}
+
+.dropdown-content li a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.city {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#city-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; 
+}
+
+#city-comparison th,
+#city-comparison td {
+  padding: 12px; 
+  border: 1px solid #ddd;
+  text-align: left; 
+}
+
+#city-comparison th {
+  background-color: #f5f5f5; 
+  font-weight: bold;
+}
+
+#city-comparison tbody tr:nth-child(even) { 
+  background-color: #f9f9f9; 
+}
+
+#city-comparison tbody tr:hover {
+  background-color: #e9e9e9; 
+}
+
+/* Media Query for Responsiveness for differnt devices and device sizes. */
+@media (max-width: 600px) {
+  #city-comparison table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+
+aside {
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:focus {
+  outline: 2px dashed #555;
+}
+section {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+section h2 {
+  font-size: 1.5em;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+}
+
+section form label {
+  margin-bottom: 5px;
+}
+
+section form input,
+section form select,
+section form textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section form button:hover {
+  background-color: #0056b3;
+}
+/* Grid layout for cities */
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.column a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.column a:hover {
+  background-color: #0056b3;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.highlight {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.highlight h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.highlight p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Additional styles for the New York page */
+#new-york-photos {
+  margin-top: 20px;
+}
+
+#new-york-photos .column {
+  text-align: center;
+}
+
+#new-york-photos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#skyscrapers .column {
+  margin-bottom: 20px; 
+}
+
+#skyscrapers h3 {
+  margin-top: 10px; 
+}
+a {
+  color: white;
+
+  text-decoration: none; 
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* Hero Section */
+.hero {
+  background-image: url('img/MiamiB.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+/* Landmark Section */
+#illinois-landmarks {
+  padding: 40px 20px;
+}
+
+#illinois-landmarks h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.landmark-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landmark {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.landmark img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.landmark h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.landmark p {
+  color: #666;
+  font-size: 1rem;
+}
+.dropdown {
+  position: relative; 
+  z-index: 10;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
+#hero {
+  background-image: url('img/newYorkkk.avif'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  display: none;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+#must-do-experiences {
+  margin: 2em 0;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}
+
+.experience {
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience h3 {
+  color: #333;
+}
+
+.experience ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.experience ul li {
+  margin-bottom: 0.5em;
+}
+
+
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Tool - Explore US Cities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><h1>Travel Tool Website</h1></a>
+            <p>Your guide to exploring major US cities</p>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <!--Dropdown intended for all states the website will provide. planning on having 10 states total as doing more will be overwhelming-->
+                        <a href="states.html">States</a>
+                        <ul class="dropdown-content">
+                            <li><a href="newYork.html">New York</a></li>
+                            <li><a href="cali.html">California</a></li>
+                            <li><a href="florida.html">Florida</a></li>
+                            <li><a href="atl.html">Atlanta</a></li>
+                            <li><a href="illinois.html">Illinois</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article id="featured">
+                <h2>Featured Cities</h2>
+            <!--grid displaying a few cities along with an image to represetn that city and a brief description-->
+
+                <div class="city-grid">
+                    <div class="city">
+                        <a href="newYork.html"> <img src="img/nyc.jpg.webp" alt="New York City skyline"> </a> 
+                        <h3>New York</h3>
+                        <p>Best restaurants, iconic landmarks, and cultural experiences.</p>
+                    </div>
+                    <div class="city">
+                        <a href="cali.html"> <img src="img/LA_.jpg" alt="Los Angeles beach view"> </a>     
+                        <h3>Los Angeles</h3>
+                        <p>Sunny beaches, Hollywood attractions, and shopping havens.</p>
+                    </div>
+                    <div class="city">
+                        <a href="illinois.html"><img src="img/Chicago_.jpeg" alt="Chicago skyline"></a>  
+                        <h3>Chicago</h3>
+                        <p>Top-tier museums, deep-dish pizza, and scenic views along Lake Michigan.</p>
+                    </div>
+                    <div class="city">
+                        <a href="atl.html"> <img src="img/Atlanta.jpg" alt="Atlanta SkyLine"></a>
+                        <h3>Atlanta</h3>
+                        <p>Atlanta, a melting pot of cultures and perspectives, welcomes visitors with open arms and a warm Southern hospitality.</p>
+                    </div>
+                </div>
+            </article>
+
+            <section id="city-comparison">
+                <h2>Top Cities Comparison</h2>
+                 <!--table shows a comparison of a few cities and some of the amenities that each offer-->
+                <table>
+                    <caption>Comparison of Top US Cities</caption> 
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Restaurants</th>
+                            <th>Activities</th>
+                            <th>Shopping</th>
+                            <th>Scenic Views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>New York</td>
+                            <td>1000+</td>
+                            <td>Central Park, Museums</td>
+                            <td>5th Avenue</td>
+                            <td>Empire State Building, Skyline</td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles</td>
+                            <td>700+</td>
+                            <td>Hollywood, Beaches</td>
+                            <td>Rodeo Drive</td>
+                            <td>Santa Monica Pier</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago</td>
+                            <td>600+</td>
+                            <td>Art Institute, Navy Pier</td>
+                            <td>Magnificent Mile</td>
+                            <td>Skydeck, Millennium Park</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="must-do-experiences">
+                <h2>Must-Do Experiences</h2>
+                <div class="experiences-grid">
+                    <!-- New York Experiences -->
+                    <div class="experience">
+                        <h3>New York</h3>
+                        <p>From iconic landmarks to vibrant culture, New York has it all.</p>
+                        <ul>
+                            <li>Take in the view from the top of the Empire State Building</li>
+                            <li>Walk through Central Park’s scenic paths</li>
+                            <li>Experience Times Square at night</li>
+                            <li>Explore the Metropolitan Museum of Art</li>
+                            <li>Stroll through Brooklyn Bridge Park</li>
+                        </ul>
+                    </div>
+            
+                    <!-- California Experiences -->
+                    <div class="experience">
+                        <h3>California</h3>
+                        <p>California offers natural beauty, bustling cities, and outdoor adventures.</p>
+                        <ul>
+                            <li>See the sunset at the Santa Monica Pier</li>
+                            <li>Drive along the scenic Pacific Coast Highway</li>
+                            <li>Hike in Yosemite National Park</li>
+                            <li>Tour the vineyards in Napa Valley</li>
+                            <li>Visit Disneyland in Anaheim</li>
+                        </ul>
+                    </div>
+            
+                    <!-- Florida Experiences -->
+                    <div class="experience">
+                        <h3>Florida</h3>
+                        <p>Known for beaches, amusement parks, and vibrant cities.</p>
+                        <ul>
+                            <li>Relax on the sandy shores of Miami Beach</li>
+                            <li>Visit the magical world of Disney at Walt Disney World</li>
+                            <li>Explore the Everglades by airboat</li>
+                            <li>Discover art and culture in Wynwood, Miami</li>
+                            <li>Check out the unique wildlife at the Florida Keys</li>
+                        </ul>
+                    </div>
+            
+                    <!-- Texas Experiences -->
+                    <div class="experience">
+                        <h3>Texas</h3>
+                        <p>A state of rich history, diverse landscapes, and vibrant city life.</p>
+                        <ul>
+                            <li>Tour The Alamo in San Antonio</li>
+                            <li>Enjoy live music on Sixth Street in Austin</li>
+                            <li>Explore the NASA Space Center in Houston</li>
+                            <li>Stroll along the River Walk in San Antonio</li>
+                            <li>Take in the views at Big Bend National Park</li>
+                        </ul>
+                    </div>
+            
+                    <!-- Illinois Experiences -->
+                    <div class="experience">
+                        <h3>Illinois</h3>
+                        <p>Famous for Chicago, historic landmarks, and scenic routes.</p>
+                        <ul>
+                            <li>Visit the Art Institute of Chicago</li>
+                            <li>Take a photo at The Bean in Millennium Park</li>
+                            <li>Go to the top of Willis Tower for sky-high views</li>
+                            <li>Experience the nightlife on Chicago’s Magnificent Mile</li>
+                            <li>Walk the historic Route 66</li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <h3>Atlanta</h3>
+                        <p>Georgia's capital, offering a blend of history, culture, and Southern charm.</p>
+                        <ul>
+                            <li>Visit the Georgia Aquarium, home to thousands of marine animals</li>
+                            <li>Explore the World of Coca-Cola and learn about the iconic beverage</li>
+                            <li>Wander through the historic Martin Luther King Jr. National Historical Park</li>
+                            <li>Catch a show at the Fox Theatre, a stunning architectural masterpiece</li>
+                            <li>Stroll through Piedmont Park, Atlanta's urban oasis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="newsletter-signup">
+                <h2>Sign Up for Personalized Travel Tips</h2>
+                <p>Get the latest travel tips and recommendations straight to your inbox.</p>
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="city">Favorite City:</label>
+                    <select id="city" name="city" required>
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="ATL">Atlanta</option>
+                        <option value="Miami">Miami</option>
+                        <option value="Dallas">Dallas</option>
+                    </select>
+            
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+
+            <aside id="city-suggestions">
+        <!--still plan on implementing some sort of AI so that users can easily get information without having to navigate thorugthout the website if needed-->
+
+                <h3>AI-Powered Suggestions</h3>
+                <p>Type your desired city for personalized recommendations.</p>
+                <form aria-label="City search">
+                    <input type="text" placeholder="Enter city name" aria-label="City name">
+                    <button type="submit">Get Suggestions</button>
+                </form>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© 2024 Travel Tool Website</p>
+            <p><a href="mailto:zach@gmail.com">Contact Us</a></p>
+        </footer>
+    </div>
+</body>
+</html>
