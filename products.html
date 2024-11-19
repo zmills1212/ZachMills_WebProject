@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our travel products! Find city tours, exclusive experiences, and premium packages to enhance your next adventure.">
+    <title>Products - Travel Tool Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header, footer {
+            background-color: #4682B4;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .paypal{
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Tool Website</h1>
+    <p>Explore Travel Products</p>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li class="dropdown">
+                <a href="states.html">States</a>
+                <ul class="dropdown-content">
+                    <li><a href="newYork.html">New York</a></li>
+                    <li><a href="cali.html">California</a></li>
+                    <li><a href="florida.html">Florida</a></li>
+                    <li><a href="atl.html">Atlanta</a></li>
+                    <li><a href="illinois.html">Illinois</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="products-header">
+    <h2>Our Products</h2>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> &gt; Products
+    </div>
+</div>
+
+<div class="filter-sort">
+    <label for="category">Category:</label>
+
+    <label for="sort">Sort By:</label>
+    <select id="sort">
+        <option value="newest">Newest</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+    </select>
+</div>
+
+<div class="product-grid">
+    <div class="product-card">
+        <img src="img/tour1.jpg" alt="Tier 1 tour">
+        <h3>City Tour</h3>
+        <p>Car drive tour of city attractions.</p>
+        <div class="price">$29.99</div>
+        <div id="paypal-button-container"></div>
+        <p id="result-message"></p>
+        <script src="https://www.paypal.com/sdk/js?client-id=AUPpEJ1SRwhsiahW_Yyf6LFOMdRRDVWM5zHwp_2LZLjYbtqcf1xDIEcDNifVvTGbYcjkPIvhPPvLLHSk&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
+        <script src="app.js"></script>
+    </div>
+
+    <div class="product-card">
+        <img src="img/tour2.jpg" alt="Exclusive Tour">
+        <h3>Exclusive City Tour</h3>
+        <p>Car tour of city attractions as well as a taste of best food in the city.</p>
+        <div class="price">$39.99</div>
+        <button class="add-to-cart">Details & Booking</button>
+    </div>
+
+    <div class="product-card">
+        <img src="img/tour3.jpg" alt="Premium tour">
+        <h3>Premium City Tour</h3>
+        <p>all inclusive tour of the city's main attractions with additional food services and celebrity sighting.</p>
+        <div class="price">$49.99</div>
+        <button class="add-to-cart">Details & Booking</button>
+
+        
+           </div>
+</div>
+<footer>
+    <p>© 2024 Travel Tool Website</p>
+    <p><a href="mailto:zach@gmail.com">Contact Us</a></p>
+</footer>
+
+</body>
+</html>

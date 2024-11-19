@@ -463,7 +463,148 @@ a:visited {
 .experience ul li {
   margin-bottom: 0.5em;
 }
+.products-header {
+  text-align: center;
+  padding: 20px;
+}
 
+.breadcrumb {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.product-card .price {
+  color: #48505f;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card .add-to-cart {
+  background-color: #0044cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-sort {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.filter-sort select {
+  padding: 5px;
+  margin: 0 10px;
+}
+.products-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.breadcrumb {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.product-card .price {
+  color:  #4682B4;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card .add-to-cart {
+  background-color: #39445b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-sort {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.filter-sort select {
+  padding: 5px;
+  margin: 0 10px;
+}
 
 
 

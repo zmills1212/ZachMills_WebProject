@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Plan your US city adventures! Explore top destinations, compare amenities, discover must-do experiences,
+     and get personalized travel tips.">
     <title>Travel Tool - Explore US Cities</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,7 +18,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cities.html">Cities</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="Products.html">Products</a></li>
                     <li class="dropdown">
                         <!--Dropdown intended for all states the website will provide. planning on having 10 states total as doing more will be overwhelming-->
                         <a href="states.html">States</a>
@@ -36,7 +38,7 @@
             <article id="featured">
                 <h2>Featured Cities</h2>
             <!--grid displaying a few cities along with an image to represetn that city and a brief description-->
-
+                 <!--image gallery -->
                 <div class="city-grid">
                     <div class="city">
                         <a href="newYork.html"> <img src="img/nyc.jpg.webp" alt="New York City skyline"> </a> 
@@ -60,6 +62,7 @@
                     </div>
                 </div>
             </article>
+      
 
             <section id="city-comparison">
                 <h2>Top Cities Comparison</h2>
@@ -100,86 +103,115 @@
                     </tbody>
                 </table>
             </section>
+            <!--added video media below-->
+      
+            <div class="city">
+                <a href="newYork.html">
+                    <video autoplay muted loop width="1000" height="800"> 
+                        <source src="42489-431756111_small.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <h3>New York</h3>
+                <p>Best restaurants, iconic landmarks, and cultural experiences.</p>
+            </div>
+          <!-- experiences able to be collapsed -->
+
             <section id="must-do-experiences">
                 <h2>Must-Do Experiences</h2>
                 <div class="experiences-grid">
                     <!-- New York Experiences -->
-                    <div class="experience">
-                        <h3>New York</h3>
-                        <p>From iconic landmarks to vibrant culture, New York has it all.</p>
-                        <ul>
-                            <li>Take in the view from the top of the Empire State Building</li>
-                            <li>Walk through Central Park’s scenic paths</li>
-                            <li>Experience Times Square at night</li>
-                            <li>Explore the Metropolitan Museum of Art</li>
-                            <li>Stroll through Brooklyn Bridge Park</li>
-                        </ul>
-                    </div>
+                    <details>
+                        <summary><h3>New York</h3></summary> 
+                        <div class="experience"> 
+                            <p>From iconic landmarks to vibrant culture, New York has it all.</p>
+                            <ul>
+                                <li>Take in the view from the top of the Empire State Building</li>
+                                <li>Walk through Central Park's scenic paths</li>
+                                <li>Experience Times Square at night</li>
+                                <li>Explore the Metropolitan Museum of Art</li>
+                                <li>Stroll through Brooklyn Bridge Park</li>
+                            </ul>
+                        </div>
+                    </details>
             
                     <!-- California Experiences -->
-                    <div class="experience">
-                        <h3>California</h3>
-                        <p>California offers natural beauty, bustling cities, and outdoor adventures.</p>
-                        <ul>
-                            <li>See the sunset at the Santa Monica Pier</li>
-                            <li>Drive along the scenic Pacific Coast Highway</li>
-                            <li>Hike in Yosemite National Park</li>
-                            <li>Tour the vineyards in Napa Valley</li>
-                            <li>Visit Disneyland in Anaheim</li>
-                        </ul>
-                    </div>
+                    <details>
+                        <summary><h3>California</h3></summary>
+                        <div class="experience">
+                            <p>California offers natural beauty, bustling cities, and outdoor adventures.</p>
+                            <ul>
+                                <li>See the sunset at the Santa Monica Pier</li>
+                                <li>Drive along the scenic Pacific Coast Highway</li>
+                                <li>Hike in Yosemite National Park</li>
+                                <li>Tour the vineyards in Napa Valley</li>
+                                <li>Visit Disneyland in Anaheim</li>
+                            </ul>
+                        </div>
+                    </details>
             
                     <!-- Florida Experiences -->
-                    <div class="experience">
-                        <h3>Florida</h3>
-                        <p>Known for beaches, amusement parks, and vibrant cities.</p>
-                        <ul>
-                            <li>Relax on the sandy shores of Miami Beach</li>
-                            <li>Visit the magical world of Disney at Walt Disney World</li>
-                            <li>Explore the Everglades by airboat</li>
-                            <li>Discover art and culture in Wynwood, Miami</li>
-                            <li>Check out the unique wildlife at the Florida Keys</li>
-                        </ul>
-                    </div>
+                    <details>
+                        <summary><h3>Florida</h3></summary>
+                        <div class="experience">
+                            <p>Known for beaches, amusement parks, and vibrant cities.</p>
+                            <ul>
+                                <li>Relax on the sandy shores of Miami Beach</li>
+                                <li>Visit Walt Disney World in Orlando</li>
+                                <li>Explore the Everglades by airboat</li>
+                                <li>Discover art and culture in Wynwood, Miami</li>
+                                <li>Check out the unique wildlife in the Florida Keys</li>
+                            </ul>
+                        </div>
+                    </details>
             
                     <!-- Texas Experiences -->
-                    <div class="experience">
-                        <h3>Texas</h3>
-                        <p>A state of rich history, diverse landscapes, and vibrant city life.</p>
-                        <ul>
-                            <li>Tour The Alamo in San Antonio</li>
-                            <li>Enjoy live music on Sixth Street in Austin</li>
-                            <li>Explore the NASA Space Center in Houston</li>
-                            <li>Stroll along the River Walk in San Antonio</li>
-                            <li>Take in the views at Big Bend National Park</li>
-                        </ul>
-                    </div>
+                    <details>
+                        <summary><h3>Texas</h3></summary>
+                        <div class="experience">
+                            <p>A state of rich history, diverse landscapes, and vibrant city life.</p>
+                            <ul>
+                                <li>Tour The Alamo in San Antonio</li>
+                                <li>Enjoy live music on Sixth Street in Austin</li>
+                                <li>Explore the NASA Space Center in Houston</li>
+                                <li>Stroll along the River Walk in San Antonio</li>
+                                <li>Take in the views at Big Bend National Park</li>
+                            </ul>
+                        </div>
+                    </details>
             
                     <!-- Illinois Experiences -->
-                    <div class="experience">
-                        <h3>Illinois</h3>
-                        <p>Famous for Chicago, historic landmarks, and scenic routes.</p>
-                        <ul>
-                            <li>Visit the Art Institute of Chicago</li>
-                            <li>Take a photo at The Bean in Millennium Park</li>
-                            <li>Go to the top of Willis Tower for sky-high views</li>
-                            <li>Experience the nightlife on Chicago’s Magnificent Mile</li>
-                            <li>Walk the historic Route 66</li>
-                        </ul>
-                    </div>
-                    <div class="experience">
-                        <h3>Atlanta</h3>
-                        <p>Georgia's capital, offering a blend of history, culture, and Southern charm.</p>
-                        <ul>
-                            <li>Visit the Georgia Aquarium, home to thousands of marine animals</li>
-                            <li>Explore the World of Coca-Cola and learn about the iconic beverage</li>
-                            <li>Wander through the historic Martin Luther King Jr. National Historical Park</li>
-                            <li>Catch a show at the Fox Theatre, a stunning architectural masterpiece</li>
-                            <li>Stroll through Piedmont Park, Atlanta's urban oasis</li>
-                        </ul>
-                    </div>
+                    <details>
+                        <summary><h3>Illinois</h3></summary>
+                        <div class="experience">
+                            <p>Famous for Chicago, historic landmarks, and scenic routes.</p>
+                            <ul>
+                                <li>Visit the Art Institute of Chicago</li>
+                                <li>Take a photo at The Bean in Millennium Park</li>
+                                <li>Go to the top of Willis Tower for sky-high views</li>
+                                <li>Experience the nightlife on Chicago’s Magnificent Mile</li>
+                                <li>Walk the historic Route 66</li>
+                            </ul>
+                        </div>
+                    </details>
+            
+                    <!-- Atlanta Experiences -->
+                    <details>
+                        <summary><h3>Atlanta</h3></summary>
+                        <div class="experience">
+                            <p>Georgia's capital, offering a blend of history, culture, and Southern charm.</p>
+                            <ul>
+                                <li>Visit the Georgia Aquarium, home to thousands of marine animals</li>
+                                <li>Explore the World of Coca-Cola and learn about the iconic beverage</li>
+                                <li>Wander through the historic Martin Luther King Jr. National Historical Park</li>
+                                <li>Catch a show at the Fox Theatre, a stunning architectural masterpiece</li>
+                                <li>Stroll through Piedmont Park, Atlanta's urban oasis</li>
+                            </ul>
+                        </div>
+                    </details>
                 </div>
             </section>
+            
             
             <section id="newsletter-signup">
                 <h2>Sign Up for Personalized Travel Tips</h2>
