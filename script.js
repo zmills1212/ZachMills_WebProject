@@ -1,28 +1,34 @@
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
+     // Accordion for City Highlights
+     document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".highlight h3").forEach((header) => {
+          header.style.cursor = "pointer"; // Make headers clickable
+          header.addEventListener("click", () => {
+              const details = header.nextElementSibling;
+              if (details.style.display === "block") {
+                  details.style.display = "none"; // Hide details
+              } else {
+                  details.style.display = "block"; // Show details
+              }
+          });
+      });
+  });
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// 4. "Back to Top" Button
+const backToTopButton = document.createElement('button');
+backToTopButton.innerHTML = 'Back to Top';
+backToTopButton.id = 'backToTopBtn';
+document.body.appendChild(backToTopButton); 
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";
-}
+};
+
+backToTopButton.addEventListener('click', function() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+});
